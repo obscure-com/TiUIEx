@@ -8,6 +8,8 @@
  */
 
 
+#define USE_TI_UITAB
+
 #import <UIKit/UIKit.h>
 #import "TiUITabGroupProxy.h"
 
