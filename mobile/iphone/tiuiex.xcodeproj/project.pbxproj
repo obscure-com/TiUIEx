@@ -22,10 +22,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		24DD6CF91134B3F500162E58 /* ComObscureTiUIExModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComObscureTiUIExModule.h */; };
-		24DD6CFA1134B3F500162E58 /* ComObscureTiUIExModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComObscureTiUIExModule.m */; };
 		AA747D9F0F9514B9006C5449 /* ComObscureTiUIEx_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComObscureTiUIEx_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		DA0754211541CA090008EA2F /* ComObscureTiUIExModule.h in Headers */ = {isa = PBXBuildFile; fileRef = DA07541B1541CA090008EA2F /* ComObscureTiUIExModule.h */; };
+		DA0754221541CA090008EA2F /* ComObscureTiUIExModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07541C1541CA090008EA2F /* ComObscureTiUIExModule.m */; };
+		DA571F491541CC55005BCCEF /* ComObscureTiUIExImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA571F471541CC55005BCCEF /* ComObscureTiUIExImageView.h */; };
+		DA571F4A1541CC55005BCCEF /* ComObscureTiUIExImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA571F481541CC55005BCCEF /* ComObscureTiUIExImageView.m */; };
+		DA571F501541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA571F4E1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h */; };
+		DA571F511541CF45005BCCEF /* ComObscureTiUIExImageViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA571F4F1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.m */; };
 		DA8001A21541B63400AF0C17 /* TiUITabGroupProxyEx.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8001A01541B63400AF0C17 /* TiUITabGroupProxyEx.h */; };
 		DA8001A31541B63400AF0C17 /* TiUITabGroupProxyEx.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8001A11541B63400AF0C17 /* TiUITabGroupProxyEx.m */; };
 /* End PBXBuildFile section */
@@ -41,12 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* ComObscureTiUIExModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComObscureTiUIExModule.h; path = Classes/ComObscureTiUIExModule.h; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ComObscureTiUIExModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComObscureTiUIExModule.m; path = Classes/ComObscureTiUIExModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* ComObscureTiUIEx_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComObscureTiUIEx_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libComObscureTiUIEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComObscureTiUIEx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA07541B1541CA090008EA2F /* ComObscureTiUIExModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComObscureTiUIExModule.h; path = Classes/ComObscureTiUIExModule.h; sourceTree = "<group>"; };
+		DA07541C1541CA090008EA2F /* ComObscureTiUIExModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComObscureTiUIExModule.m; path = Classes/ComObscureTiUIExModule.m; sourceTree = "<group>"; };
+		DA571F471541CC55005BCCEF /* ComObscureTiUIExImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComObscureTiUIExImageView.h; path = Classes/ComObscureTiUIExImageView.h; sourceTree = "<group>"; };
+		DA571F481541CC55005BCCEF /* ComObscureTiUIExImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComObscureTiUIExImageView.m; path = Classes/ComObscureTiUIExImageView.m; sourceTree = "<group>"; };
+		DA571F4E1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComObscureTiUIExImageViewProxy.h; path = Classes/ComObscureTiUIExImageViewProxy.h; sourceTree = "<group>"; };
+		DA571F4F1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComObscureTiUIExImageViewProxy.m; path = Classes/ComObscureTiUIExImageViewProxy.m; sourceTree = "<group>"; };
 		DA8001A01541B63400AF0C17 /* TiUITabGroupProxyEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiUITabGroupProxyEx.h; path = Classes/TiUITabGroupProxyEx.h; sourceTree = "<group>"; };
 		DA8001A11541B63400AF0C17 /* TiUITabGroupProxyEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiUITabGroupProxyEx.m; path = Classes/TiUITabGroupProxyEx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,10 +101,14 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24DD6CF71134B3F500162E58 /* ComObscureTiUIExModule.h */,
-				24DD6CF81134B3F500162E58 /* ComObscureTiUIExModule.m */,
+				DA07541B1541CA090008EA2F /* ComObscureTiUIExModule.h */,
+				DA07541C1541CA090008EA2F /* ComObscureTiUIExModule.m */,
 				DA8001A01541B63400AF0C17 /* TiUITabGroupProxyEx.h */,
 				DA8001A11541B63400AF0C17 /* TiUITabGroupProxyEx.m */,
+				DA571F471541CC55005BCCEF /* ComObscureTiUIExImageView.h */,
+				DA571F481541CC55005BCCEF /* ComObscureTiUIExImageView.m */,
+				DA571F4E1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h */,
+				DA571F4F1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -118,8 +130,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* ComObscureTiUIEx_Prefix.pch in Headers */,
-				24DD6CF91134B3F500162E58 /* ComObscureTiUIExModule.h in Headers */,
 				DA8001A21541B63400AF0C17 /* TiUITabGroupProxyEx.h in Headers */,
+				DA0754211541CA090008EA2F /* ComObscureTiUIExModule.h in Headers */,
+				DA571F491541CC55005BCCEF /* ComObscureTiUIExImageView.h in Headers */,
+				DA571F501541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DD6CFA1134B3F500162E58 /* ComObscureTiUIExModule.m in Sources */,
 				DA8001A31541B63400AF0C17 /* TiUITabGroupProxyEx.m in Sources */,
+				DA0754221541CA090008EA2F /* ComObscureTiUIExModule.m in Sources */,
+				DA571F4A1541CC55005BCCEF /* ComObscureTiUIExImageView.m in Sources */,
+				DA571F511541CF45005BCCEF /* ComObscureTiUIExImageViewProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
