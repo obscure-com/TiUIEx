@@ -1,12 +1,14 @@
 var TiUIEx = require('com.obscure.TiUIEx');
+var ImageExWindow = require('ImageExWindow');
 
-var win1 = Ti.UI.createWindow({ backgroundColor: 'white' });
-win1.add(Ti.UI.createLabel({ text: 'win1' }));
+var win1 = new ImageExWindow();
 var tab1 = Ti.UI.createTab({
     window: win1,
     title: 'win1',
     icon: 'tabs/KS_nav_ui.png',
 });
+
+
 
 var win2 = Ti.UI.createWindow({ backgroundColor: 'white' });
 win2.add(Ti.UI.createLabel({ text: 'win2' }));
