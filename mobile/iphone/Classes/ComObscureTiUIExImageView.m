@@ -10,22 +10,51 @@
 
 @implementation ComObscureTiUIExImageView
 
+- (id)init {
+    if (self = [super init]) {
+        contentModes = [NSDictionary dictionaryWithObjectsAndKeys:
+                        [NSNumber numberWithInt:UIViewContentModeCenter], @"center",
+                        [NSNumber numberWithInt:UIViewContentModeScaleAspectFit], @"aspectfit",
+                        [NSNumber numberWithInt:UIViewContentModeScaleAspectFill], @"aspectfill",
+                        [NSNumber numberWithInt:UIViewContentModeBottom], @"bottom",
+                        [NSNumber numberWithInt:UIViewContentModeBottomLeft], @"bottomleft",
+                        [NSNumber numberWithInt:UIViewContentModeBottomRight], @"bottomright",
+                        [NSNumber numberWithInt:UIViewContentModeLeft], @"left",
+                        [NSNumber numberWithInt:UIViewContentModeRight], @"right",
+                        [NSNumber numberWithInt:UIViewContentModeTop], @"top",
+                        [NSNumber numberWithInt:UIViewContentModeTopLeft], @"topleft",
+                        [NSNumber numberWithInt:UIViewContentModeTopRight], @"topright",
+                        [NSNumber numberWithInt:UIViewContentModeScaleToFill], @"scalefill",
+                        nil];
+    }
+    return self;
+}
+
+- (void)dealloc {
+    RELEASE_TO_NIL(contentModes)
+    [super dealloc];
+}
+
 -(void)setContentMode_:(id)mode {
-    UIViewContentMode contentMode;
     NSString * modestr = [TiUtils stringValue:mode];
-    if ([@"aspectfit" isEqualToString:modestr]) {
-        contentMode = UIViewContentModeScaleAspectFit;
-    }
-    else if ([@"aspectfill" isEqualToString:modestr]) {
-        contentMode = UIViewContentModeScaleAspectFill;
-    }
-    else if ([@"center" isEqualToString:modestr]) {
-        contentMode = UIViewContentModeCenter;
-    }
-    else {
-        contentMode = UIViewContentModeScaleAspectFit;
-    }
-    ((UIImageView *)[self imageView]).contentMode = contentMode;
+    UIViewContentMode contentMode = [[contentModes objectForKey:modestr] intValue];
+    ((UIImageView *)[self imageView]).contentMode = contentMode ? contentMode : UIViewContentModeScaleAspectFit;
+}
+
+- (id)contentMode_ {
+    UIViewContentMode mode = ((UIImageView *)[self imageView]).contentMode;
+    NSSet * set = [contentModes keysOfEntriesPassingTest:^BOOL(id key, id obj, BOOL *stop) {
+        if (mode == [key intValue]) {
+            *stop = YES;
+            return YES;
+        }
+        return NO;
+    }];
+    return [set anyObject];
+}
+
+- (id)clipsToBounds_ {
+    return [NSNumber numberWithBool:((UIImageView *)[self imageView]).clipsToBounds];
 }
 
 -(void)setClipsToBounds_:(id)clips {

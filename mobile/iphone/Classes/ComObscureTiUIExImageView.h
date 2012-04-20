@@ -12,5 +12,7 @@
 #import "TiUIImageView.h"
 
 @interface ComObscureTiUIExImageView : TiUIImageView {
+@private
+    NSDictionary * contentModes;
 }
 @end
