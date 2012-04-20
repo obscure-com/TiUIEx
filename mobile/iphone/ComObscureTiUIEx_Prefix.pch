@@ -1,0 +1,7 @@
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+// required to get the TiUITabGroupProxy.h header
+#define USE_TI_UITAB

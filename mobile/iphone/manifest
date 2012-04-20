@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: extensions for Titanium.UI components
+author: Paul Mietz Egli
+license: Apache License 2.0
+copyright: © 2012 Paul Mietz Egli
+
+
+# these should not be edited
+name: tiuiex
+moduleid: com.obscure.TiUIEx
+guid: 010f85ae-d060-447e-92d1-e2ca01eae775
+platform: iphone
+minsdk: 2.0.1.GA2
