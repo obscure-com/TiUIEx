@@ -30,7 +30,6 @@ NSString * _selectedImageTintColor = nil;
     else {
         result = [Webcolor webColorNamed:str];
     }
-    NSLog(@"color %@ is %@", str, [result description]);
     return result;
 }
 
