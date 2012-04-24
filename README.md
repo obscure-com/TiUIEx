@@ -19,5 +19,5 @@ the module provides the following extensions for iOS:
 * add `contentMode` property to set scaling and image placement.
 * add `clipsToBounds` property to control image clipping.
 
-See the [iOS docs](mobile/iphone/documentation/index.md) for complete details
+See the [iOS docs](TiUIEx/blob/master/mobile/iphone/documentation/index.md) for complete details
 of the additions.
