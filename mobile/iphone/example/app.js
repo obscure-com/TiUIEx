@@ -1,21 +1,21 @@
-var TiUIEx = require('com.obscure.TiUIEx');
-var ImageExWindow = require('ImageExWindow');
+var TiUIEx = require('com.obscure.TiUIEx'),
+    ImageExWindow = require('ImageExWindow'),
+    TabColorWindow = require('TabColorWindow');
 
 var win1 = new ImageExWindow();
 var tab1 = Ti.UI.createTab({
     window: win1,
-    title: 'win1',
+    title: 'image view',
     icon: 'tabs/KS_nav_ui.png',
 });
 
 
 
-var win2 = Ti.UI.createWindow({ backgroundColor: 'white' });
-win2.add(Ti.UI.createLabel({ text: 'win2' }));
+var win2 = new TabColorWindow();
 var tab2 = Ti.UI.createTab({
     window: win2,
-    title: 'win2',
-    icon: 'tabs/KS_nav_platform.png',
+    title: 'tab colors',
+    icon: 'tabs/KS_nav_views.png',
 })
 
 
@@ -24,9 +24,9 @@ var tab2 = Ti.UI.createTab({
 
 var tabGroup = TiUIEx.createTabGroup({
     tabs: [tab1,tab2],
-    tintColor: '#033',
+    tintColor: '#33f',
 });
 
-tabGroup.selectedImageTintColor = "red";
+win2.tabGroup = tabGroup;
 
 tabGroup.open();

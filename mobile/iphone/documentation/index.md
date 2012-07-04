@@ -28,7 +28,10 @@ The tiuiex variable is a reference to the Module object.
 
 **tintColor**
 
-color, read/write.  The tint color to apply to the tab bar background.
+color, read/write.  The tint color to apply to the tab bar background.  NOTE: this property needs to be
+set at the time of tab group creation.  If it is set after the tab group is created, it changes the
+color of the unselected icons in the tab group, not the background of the whole bar.  Don't ask me why
+this happens; it's still a mystery to me...
 
 **selectedImageTintColor**
 
