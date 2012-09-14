@@ -10,9 +10,12 @@
 
 @implementation ComObscureTiUIExImageView
 
+@synthesize contentMode;
+@synthesize contentModes;
+
 - (id)init {
     if (self = [super init]) {
-        contentModes = [NSDictionary dictionaryWithObjectsAndKeys:
+        self.contentModes = [NSDictionary dictionaryWithObjectsAndKeys:
                         [NSNumber numberWithInt:UIViewContentModeCenter], @"center",
                         [NSNumber numberWithInt:UIViewContentModeScaleAspectFit], @"aspectfit",
                         [NSNumber numberWithInt:UIViewContentModeScaleAspectFill], @"aspectfill",
@@ -31,26 +34,39 @@
 }
 
 - (void)dealloc {
-    RELEASE_TO_NIL(contentModes)
     [super dealloc];
 }
 
+-(void)setURLImageOnUIThread:(UIImage*)image {
+    [super setURLImageOnUIThread:image];
+    [self updateContentMode];
+}
+
+-(void)updateContentMode {
+    UIViewContentMode curMode = [self contentModeForImageView];
+    UIImageView * imageView = [self imageView];
+    if (imageView != nil) {
+        imageView.contentMode = curMode;
+    }
+    UIView * container = [self container];
+    if (container != nil) {
+        for (UIView *view in [container subviews]) {
+            UIView *child = [[view subviews] count] > 0 ? [[view subviews] objectAtIndex:0] : nil;
+            if (child!=nil && [child isKindOfClass:[UIImageView class]])
+            {
+                child.contentMode = curMode;
+            }
+        }
+    }
+}
+
 -(void)setContentMode_:(id)mode {
-    NSString * modestr = [TiUtils stringValue:mode];
-    UIViewContentMode contentMode = [[contentModes objectForKey:modestr] intValue];
-    ((UIImageView *)[self imageView]).contentMode = contentMode ? contentMode : UIViewContentModeScaleAspectFit;
+    self.contentMode = [TiUtils stringValue:mode];
+    [self updateContentMode];
 }
 
 - (id)contentMode_ {
-    UIViewContentMode mode = ((UIImageView *)[self imageView]).contentMode;
-    NSSet * set = [contentModes keysOfEntriesPassingTest:^BOOL(id key, id obj, BOOL *stop) {
-        if (mode == [key intValue]) {
-            *stop = YES;
-            return YES;
-        }
-        return NO;
-    }];
-    return [set anyObject];
+    return self.contentMode;
 }
 
 - (id)clipsToBounds_ {
@@ -59,6 +75,10 @@
 
 -(void)setClipsToBounds_:(id)clips {
     ((UIImageView *)[self imageView]).clipsToBounds = [TiUtils boolValue:clips def:NO];
+}
+
+-(UIViewContentMode)contentModeForImageView {
+    return [[contentModes objectForKey:self.contentMode] intValue];
 }
 
 @end

@@ -11,8 +11,7 @@
 #import <UIKit/UIKit.h>
 #import "TiUIImageView.h"
 
-@interface ComObscureTiUIExImageView : TiUIImageView {
-@private
-    NSDictionary * contentModes;
-}
+@interface ComObscureTiUIExImageView : TiUIImageView
+@property (nonatomic, strong) NSDictionary * contentModes;
+@property (nonatomic, strong) NSString * contentMode;
 @end
