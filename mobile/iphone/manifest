@@ -15,4 +15,4 @@ name: tiuiex
 moduleid: com.obscure.TiUIEx
 guid: 010f85ae-d060-447e-92d1-e2ca01eae775
 platform: iphone
-minsdk: 2.0.1.GA2
+minsdk: 3.0.0.GA
