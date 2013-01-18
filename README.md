@@ -21,3 +21,10 @@ the module provides the following extensions for iOS:
 
 See the [iOS docs](TiUIEx/blob/master/mobile/iphone/documentation/index.md) for complete details
 of the additions.
+
+Current Build
+-------------
+
+Version 1.0, Titanium SDK 3.0.0.GA (requires iOS 5.0 or later)
+
+https://pegli.github.s3.amazonaws.com/com.obscure.tiuiex-iphone-1.0.zip
