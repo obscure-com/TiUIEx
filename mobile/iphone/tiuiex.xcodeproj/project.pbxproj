@@ -32,6 +32,8 @@
 		DA571F511541CF45005BCCEF /* ComObscureTiUIExImageViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA571F4F1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.m */; };
 		DA8001A21541B63400AF0C17 /* TiUITabGroupProxyEx.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8001A01541B63400AF0C17 /* TiUITabGroupProxyEx.h */; };
 		DA8001A31541B63400AF0C17 /* TiUITabGroupProxyEx.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8001A11541B63400AF0C17 /* TiUITabGroupProxyEx.m */; };
+		DAA56C6B17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA56C6917611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.h */; };
+		DAA56C6C17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA56C6A17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		DA571F4F1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComObscureTiUIExImageViewProxy.m; path = Classes/ComObscureTiUIExImageViewProxy.m; sourceTree = "<group>"; };
 		DA8001A01541B63400AF0C17 /* TiUITabGroupProxyEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiUITabGroupProxyEx.h; path = Classes/TiUITabGroupProxyEx.h; sourceTree = "<group>"; };
 		DA8001A11541B63400AF0C17 /* TiUITabGroupProxyEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiUITabGroupProxyEx.m; path = Classes/TiUITabGroupProxyEx.m; sourceTree = "<group>"; };
+		DAA56C6917611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiUIiOSToolbarProxy+Extended.h"; path = "Classes/TiUIiOSToolbarProxy+Extended.h"; sourceTree = "<group>"; };
+		DAA56C6A17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiUIiOSToolbarProxy+Extended.m"; path = "Classes/TiUIiOSToolbarProxy+Extended.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				DA571F481541CC55005BCCEF /* ComObscureTiUIExImageView.m */,
 				DA571F4E1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h */,
 				DA571F4F1541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.m */,
+				DAA56C6917611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.h */,
+				DAA56C6A17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 				DA0754211541CA090008EA2F /* ComObscureTiUIExModule.h in Headers */,
 				DA571F491541CC55005BCCEF /* ComObscureTiUIExImageView.h in Headers */,
 				DA571F501541CF44005BCCEF /* ComObscureTiUIExImageViewProxy.h in Headers */,
+				DAA56C6B17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +218,7 @@
 				DA0754221541CA090008EA2F /* ComObscureTiUIExModule.m in Sources */,
 				DA571F4A1541CC55005BCCEF /* ComObscureTiUIExImageView.m in Sources */,
 				DA571F511541CF45005BCCEF /* ComObscureTiUIExImageViewProxy.m in Sources */,
+				DAA56C6C17611ABB006F3BB6 /* TiUIiOSToolbarProxy+Extended.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

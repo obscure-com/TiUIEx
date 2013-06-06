@@ -5,3 +5,4 @@
 
 #define USE_TI_UITAB
 #define USE_TI_UIIMAGEVIEW
+#define USE_TI_UIIOSTOOLBAR
