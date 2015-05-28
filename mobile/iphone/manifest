@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0
+version: 1.1
 apiversion: 2
 description: extensions for Titanium.UI components
 author: Paul Mietz Egli
@@ -15,4 +15,5 @@ name: tiuiex
 moduleid: com.obscure.TiUIEx
 guid: 010f85ae-d060-447e-92d1-e2ca01eae775
 platform: iphone
-minsdk: 3.0.0.GA
+minsdk: 3.5.1.GA
+architectures: armv7 arm64 i386 x86_64

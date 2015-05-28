@@ -21,7 +21,7 @@
 // How to add a compiler define:
 //
 // OTHER_CFLAGS=$(inherited) -DFOO=1
-OTHER_CFLAGS=$(inherited) -DUSE_TI_UITAB -DUSE_TI_UIIMAGEVIEW -DUSE_TI_UIIOSTOOLBAR
+OTHER_CFLAGS=$(inherited) -DUSE_TI_UITAB -DUSE_TI_UIIMAGEVIEW -DUSE_TI_UIIOSTOOLBAR 
 //
 //
 // IMPORTANT NOTE: always use $(inherited) in your overrides
